@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Year</title>
+    <link rel="shortcut icon" href="Stream Tech Notes.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Stream Tech Notes.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style_year.css">
+    <script src="script_year.js"></script>
+
+</head>
+<body>
+
+    <!-- Header Section with Logo, Name, and Slogan -->
+    <header>
+        <img src="/Images/stream tech notes.png" alt="Your Website Logo">
+        <h1 class="heading">Stream Tech Notes</h1>
+        <div class="slogan">"Unlocking Knowledge, One Byte at a Time: BTech Notes Hub"</div>
+    </header>
+
+    <!-- Main Content Section -->
+  
+        <!-- 5th Semester -->
+        <div class="semester-wrapper">
+            <div class="semester">
+                <h2 class="semester-heading">Semester 5</h2>
+                <br>
+                <div class="branch-column">
+                    <button class="branch-button" onclick="toggleSubjects('cse5')"> COMPUTER SCIENCE AND ENGINEERING (CSE)<span>&#9662;</span></button>
+                    <ul class="subject-list" id="cse5-subjects">
+                        <li onclick="openPDF('/3rd Year/5th Sem/CS/cs501.pdf')">CS501 Theory of Computation</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CS/cs502.pdf')">CS502 Database Management Systems</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CS/cs503.pdf')">CS503 Departmental Elective</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CS/cs504.pdf')">CS504 Open Elective </li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('cse-aiml5')">CSE-ARTIFICIAL INTELLEGENCE AND MACHINE LEARNING(CSE-AIML)<span>&#9662;</span></button>
+                    <ul class="subject-list" id="cse-aiml5-subjects">
+                        <li onclick="openPDF('/3rd Year/5th Sem/AL/al501.pdf')">AL501 Operating Systems</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/AL/al502.pdf')">AL502 Database Management
+                            Systems </li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/AL/al503.pdf')">AL503 Departmental Elective</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/AL/al504.pdf')">AL504 Open Elective </li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    
+                    <button class="branch-button" onclick="toggleSubjects('cseds5')">CSE- DATA SCIENCE(CSE-DS) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="cseds5-subjects">
+                        <li onclick="openPDF('/3rd Year/5th Sem/CD/cd501.pdf')">CD501 Theory of Computation</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CD/cd502.pdf')">CD502 Machine Learning</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CD/cd503.pdf')">CD503 Departmental Elective</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CD/cd504.pdf')">CD504 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('it5')">INFORMATION TECHNOLOGY(IT) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="it5-subjects">
+                        <li onclick="openPDF('/3rd Year/5th Sem/IT/it501.pdf')">IT501 Operating System</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/IT/it502.pdf')">IT502 Computer Network</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/IT/it503.pdf')">IT503 Departmental Elective-I</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/IT/it504.pdf')">IT504 Open Elective-I</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('ec5')">ELECTRONICS AND COMMUNICATION ENGINEERING(ECE) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="ec5-subjects">
+                        <li onclick="openPDF('/3rd Year/5th Sem/EC/ec501.pdf')">EC501 Microprocessor & its Application</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/EC/ec502.pdf')">EC502 Digital Communication</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/EC/ec503.pdf')">EC503 Departmental Elective</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/EC/ec504.pdf')">EC504 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('ex5')">ELECTRICAL AND ELECTRONICS ENGINEERING(EX) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="ex5-subjects">
+                        <li onclick="openPDF('/3rd Year/5th Sem/EX/ex501.pdf')">EX501 Electrical Machine-II </li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/EX/ex502.pdf')">EX502 Power Electronics</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/EX/ex503.pdf')">EX503 Departmental Elective -I</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/EX/ex504.pdf')">EX504 Open Elective -I</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('ce5')">CIVIL ENGINEERING (CE) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="ce5-subjects">
+                        <li onclick="openPDF('/3rd Year/5th Sem/CE/ce501.pdf')">CE501 Fluid Mechanics I</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CE/ce502.pdf')">CE502 Transportation Engg II</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CE/ce503.pdf')">CE503 Departmental Elective </li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/CE/ce504.pdf')">CE504 Open Elective </li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('me5')">MECHANICAL ENGINEERING (ME) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="me5-subjects">
+                        <li onclick="openPDF('/3rd Year/5th Sem/ME/me501.pdf')">ME501 I C Engines</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/ME/me502.pdf')">ME502 Mechanical Vibration </li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/ME/me503.pdf')">ME503 Departmental Elective</li>
+                        <li onclick="openPDF('/3rd Year/5th Sem/ME/me504.pdf')">ME504 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+    
+                    <!-- Add more branches and their subjects as needed -->
+                </div>
+            </div>
+    
+            <!-- 6th Semester -->
+            <div class="semester">
+                <h2 class="semester-heading">Semester 6</h2>
+                <br>
+                <div class="branch-column">
+                    <button class="branch-button" onclick="toggleSubjects('cse6')"> COMPUTER SCIENCE AND ENGINEERING (CSE) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="cse6-subjects">
+                        <li onclick="openPDF('/3rd Year/6th Sem/CS/cs601.pdf')">CS601 Machine Learning</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CS/cs602.pdf')">CS602 Computer Networks</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CS/cs603.pdf')">CS603 Departmental Elective 7</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CS/cs604.pdf')">CS604 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('cse-aiml6')"> CSE-ARTIFICIAL INTELLEGENCE AND MACHINE LEARNING(CSE-AIML)<span>&#9662;</span></button>
+                    <ul class="subject-list" id="cse-aiml6-subjects">
+                        <li onclick="openPDF('/3rd Year/6th Sem/AL/al601.pdf')">AL601 Theory of Computation</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/AL/al602.pdf')">AL602 Computer Networks </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/AL/al603.pdf')">AL603 Departmental Elective </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/AL/al604.pdf')">AL604 Open Elective </li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+            
+                    <button class="branch-button" onclick="toggleSubjects('cseds6')">CSE- DATA SCIENCE(CSE-DS) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="cseds6-subjects">
+                        <li onclick="openPDF('/3rd Year/6th Sem/CD/cd601.pdf')">CD601 Deep Learning</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CD/cd602.pdf')">CD602 Computer Networks</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CD/cd603.pdf')">CD603 Departmental Elective </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CD/cd604.pdf')">CD604 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('it6')">INFORMATION TECHNOLOGY(IT) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="it6-subjects">
+                        <li onclick="openPDF('/3rd Year/6th Sem/IT/it601.pdf')">IT601 Computer Graphics &
+                            Multimedia</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/IT/it602.pdf')">IT602 Wireless and Mobile Computing</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/IT/it603.pdf')">IT603 Departmental Elective </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/IT/it604.pdf')">IT604 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('ec6')"> ELECTRONICS AND COMMUNICATION ENGINEERING(ECE)<span>&#9662;</span></button>
+                    <ul class="subject-list" id="ec6-subjects">
+                        <li onclick="openPDF('/3rd Year/6th Sem/EC/ec601.pdf')">EC601 Digital Signal Processing</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/EC/ec602.pdf')">EC602 Antenna & Wave propagation</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/EC/ec603.pdf')">EC603 Departmental Elective </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/EC/ec604.pdf')">EC604 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('ex6')">ELECTRICAL AND ELECTRONICS ENGINEERING(EX) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="ex6-subjects">
+                        <li onclick="openPDF('/3rd Year/6th Sem/EX/ex601.pdf')">EX601 Power System-II</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/EX/ex602.pdf')">EX602 Microprocessor & Microcontroller </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/EX/ex603.pdf')">EX603 Departmental Elective </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/EX/ex604.pdf')">EX604 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('ce6')">CIVIL ENGINEERING (CE) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="ce6-subjects">
+                        <li onclick="openPDF('/3rd Year/6th Sem/CE/ce601.pdf')">CE601 Structural Design and Drawing (RCC-I) </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CE/ce602.pdf')">CE602 Environmental Engineering I</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CE/ce603.pdf')">CE603 Departmental Elective</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/CE/ce604.pdf')">CE604 Open Elective</li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                    <button class="branch-button" onclick="toggleSubjects('me6')">MECHANICAL ENGINEERING (ME) <span>&#9662;</span></button>
+                    <ul class="subject-list" id="me6-subjects">
+                        <li onclick="openPDF('/3rd Year/6th Sem/ME/me601.pdf')">ME601 Thermal Engineering and Gas Dynamics</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/ME/me602.pdf')">ME602 Machine Component Design</li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/ME/me603.pdf')">ME603 Departmental Elective </li>
+                        <li onclick="openPDF('/3rd Year/6th Sem/ME/me604.pdf')">ME604 Open Elective </li>
+                        <!-- Add more subjects as needed -->
+                    </ul>
+                  
+    
+                    <!-- Add more branches and their subjects as needed -->
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

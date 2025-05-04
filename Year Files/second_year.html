@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>2nd Year</title>
+    <link rel="shortcut icon" href="Stream Tech Notes.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Stream Tech Notes.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style_year.css">
+    <script src="script_year.js"></script>
+
+</head>
+<body>
+
+    <!-- Header Section with Logo, Name, and Slogan -->
+    <header>
+        <img src="/Images/stream tech notes.png" alt="Your Website Logo">
+        <h1 class="heading">Stream Tech Notes</h1>
+        <div class="slogan">"Unlocking Knowledge, One Byte at a Time: BTech Notes Hub"</div>
+    </header>
+
+    <!-- Main Content Section -->
+        <div class="semester-wrapper">
+            <!-- 3rd Semester -->
+        <div class="semester">
+            <h2 class="semester-heading">Semester 3</h2>
+            <br>
+            <div class="branch-column">
+                <button class="branch-button" onclick="toggleSubjects('cse3')"> COMPUTER SCIENCE AND ENGINEERING (CSE)<span>&#9662;</span></button>
+                <ul class="subject-list" id="cse3-subjects">
+                    <li onclick="openPDF('ES301.pdf')">ES301 Energy & Environmental Engineering</li>
+                    <li onclick="openPDF('CS302.pdf')">CS302 Discrete Structure</li>
+                    <li onclick="openPDF('CS303.pdf')">CS303 Data Structure</li>
+                    <li onclick="openPDF('CS304.pdf')">CS304 Digital Circuits and Systems </li>
+                    <li onclick="openPDF('CS305.pdf')">CS305 Object Oriented Programming & Methodology</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('cse-aiml3')">CSE-ARTIFICIAL INTELLEGENCE AND MACHINE LEARNING(CSE-AIML)<span>&#9662;</span></button>
+                <ul class="subject-list" id="cse-aiml3-subjects">
+                    <li onclick="openPDF('AL301.pdf')">AL301 Technical Communication</li>
+                    <li onclick="openPDF('AL302.pdf')">AL302 Introduction to Probability and Statistics</li>
+                    <li onclick="openPDF('AL303.pdf')">AL303 Data Structures</li>
+                    <li onclick="openPDF('AL304.pdf')">AL304 Artificial Intelligence</li>
+                    <li onclick="openPDF('AL305.pdf')">AL305 Object Oriented Programming & Methodology</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                
+                <button class="branch-button" onclick="toggleSubjects('cseds3')">CSE- DATA SCIENCE(CSE-DS) <span>&#9662;</span></button>
+                <ul class="subject-list" id="cseds3-subjects">
+                    <li onclick="openPDF('CD301.pdf')">CD301 Technical Communication</li>
+                    <li onclick="openPDF('CD302.pdf')">CD302 Introduction to Probability and Statistics</li>
+                    <li onclick="openPDF('CD303.pdf')">CD303 Data Structures</li>
+                    <li onclick="openPDF('CD304.pdf')">CD304 Database Management Systems</li>
+                    <li onclick="openPDF('CD305.pdf')">CD305 Object Oriented Programming & Methodology</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('it3')">INFORMATION TECHNOLOGY(IT) <span>&#9662;</span></button>
+                <ul class="subject-list" id="it3-subjects">
+                    <li onclick="openPDF('ES301.pdf')">ES301 Energy & Environmental Engineering</li>
+                    <li onclick="openPDF('IT301.pdf')">IT301 Discrete Structure</li>
+                    <li onclick="openPDF('IT302.pdf')">IT302 Data Structure</li>
+                    <li onclick="openPDF('IT303.pdf')">IT303 Object Oriented Programming & Methodology</li>
+                    <li onclick="openPDF('IT304.pdf')">IT304 Digital Circuits and Systems</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('ec3')">ELECTRONICS AND COMMUNICATION ENGINEERING(ECE) <span>&#9662;</span></button>
+                <ul class="subject-list" id="ec3-subjects">
+                    <li onclick="openPDF('BT302.pdf')">BT302 Mathematics-III </li>
+                    <li onclick="openPDF('EC301.pdf')">EC301 Electronic Measurements and Instrumentation</li>
+                    <li onclick="openPDF('EC302.pdf')">EC302 Digital system design</li>
+                    <li onclick="openPDF('EC303.pdf')">EC303 Electronic Devices</li>
+                    <li onclick="openPDF('EC304.pdf')">EC304 Network Analysis</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('ex3')">ELECTRICAL AND ELECTRONICS ENGINEERING(EX) <span>&#9662;</span></button>
+                <ul class="subject-list" id="ex3-subjects">
+                    <li onclick="openPDF('ES301.pdf')">ES301 Energy & Environmental Engineering</li>
+                    <li onclick="openPDF('EX302.pdf')">EX302 Signals and Systems</li>
+                    <li onclick="openPDF('EX303.pdf')">EX303 Electrical Measurements and Instruments</li>
+                    <li onclick="openPDF('EX304.pdf')">EX304 Network Analysis</li>
+                    <li onclick="openPDF('EX305.pdf')">EX305 Analog Electronics</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('ce3')">CIVIL ENGINEERING (CE) <span>&#9662;</span></button>
+                <ul class="subject-list" id="ce3-subjects">
+                    <li onclick="openPDF('BT302.pdf')" >BT302 Mathematics-III</li>
+                    <li onclick="openPDF('CE302.pdf')" >CE302 Construction Materials</li>
+                    <li onclick="openPDF('CE303.pdf')" >CE303 Surveying</li>
+                    <li onclick="openPDF('CE304.pdf')" >CE304 Building Planning & Architecture</li>
+                    <li onclick="openPDF('CE305.pdf')" >CE305 Strength of Materials</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('me3')">MECHANICAL ENGINEERING (ME) <span>&#9662;</span></button>
+                <ul class="subject-list" id="me3-subjects">
+                    <li onclick="openPDF('BT302.pdf')">BT302 Mathematics-III</li>
+                    <li onclick="openPDF('ME302.pdf')">ME302 Thermodynamics</li>
+                    <li onclick="openPDF('ME303.pdf')">ME303 Materials Technology</li>
+                    <li onclick="openPDF('ME304.pdf')">ME304 Strength of Material </li>
+                    <li onclick="openPDF('ME305.pdf')">ME305 Manufacturing Process</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+
+                <!-- Add more branches and their subjects as needed -->
+            </div>
+        </div>
+
+        <!-- 4th Semester -->
+        <div class="semester">
+            <h2 class="semester-heading">Semester 4</h2>
+            <br>
+            <div class="branch-column">
+                <button class="branch-button" onclick="toggleSubjects('cse4')"> COMPUTER SCIENCE AND ENGINEERING (CSE) <span>&#9662;</span></button>
+                <ul class="subject-list" id="cse4-subjects">
+                    <li onclick="openPDF('BT401.pdf')">BT401 Mathematics-III</li>
+                    <li onclick="openPDF('CS402.pdf')">CS402 Analysis Design of Algorithm</li>
+                    <li onclick="openPDF('CS403.pdf')">CS403 Software Engineering</li>
+                    <li onclick="openPDF('CS404.pdf')">CS404 Computer Org. & Architecture</li>
+                    <li onclick="openPDF('CS405.pdf')">CS405 Operating Systems</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('cse-aiml4')"> CSE-ARTIFICIAL INTELLEGENCE AND MACHINE LEARNING(CSE-AIML)<span>&#9662;</span></button>
+                <ul class="subject-list" id="cse-aiml4-subjects">
+                    <li onclick="openPDF('AL401.pdf')">AL401 Introduction to Discrete Structure &Linear Algebra</li>
+                    <li onclick="openPDF('AL402.pdf')">AL402 Analysis Design of Algorithm</li>
+                    <li onclick="openPDF('AL403.pdf')">AL403 Software Engineering</li>
+                    <li onclick="openPDF('AL404.pdf')">AL404 Computer Org. & Architecture</li>
+                    <li onclick="openPDF('AL405.pdf')">AL405 Machine Learning</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+        
+                <button class="branch-button" onclick="toggleSubjects('cseds4')">CSE- DATA SCIENCE(CSE-DS) <span>&#9662;</span></button>
+                <ul class="subject-list" id="cseds4-subjects">
+                    <li onclick="openPDF('CD401.pdf')">CD401 Introduction to Discrete Structure &Linear Algebra</li>
+                    <li onclick="openPDF('CD402.pdf')">CD402 Analysis Design of Algorithm</li>
+                    <li onclick="openPDF('CD403.pdf')">CD403 Software Engineering</li>
+                    <li onclick="openPDF('CD404.pdf')">CD404 Introduction to Data Science</li>
+                    <li onclick="openPDF('CD405.pdf')">CD405 Operating Systems</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('it4')">INFORMATION TECHNOLOGY(IT) <span>&#9662;</span></button>
+                <ul class="subject-list" id="it4-subjects">
+                    <li onclick="openPDF('BT401.pdf')">BT401 Mathematics-III</li>
+                    <li onclick="openPDF('IT402.pdf')">IT402 Computer Architecture</li>
+                    <li onclick="openPDF('IT403.pdf')">IT403 Analysis and Design of Algorithm</li>
+                    <li onclick="openPDF('IT404.pdf')">IT404 Analog & Digital Comm.</li>
+                    <li onclick="openPDF('IT405.pdf')">IT405 Data Base Management System</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('ec4')"> ELECTRONICS AND COMMUNICATION ENGINEERING(ECE)<span>&#9662;</span></button>
+                <ul class="subject-list" id="ec4-subjects">
+                    <li onclick="openPDF('ES401.pdf')">ES401 Energy & Environmental Engineering</li>
+                    <li onclick="openPDF('EC402.pdf')">EC402 Signals & Systems</li>
+                    <li onclick="openPDF('EC403.pdf')">EC403 Analog Communication</li>
+                    <li onclick="openPDF('EC404.pdf')">EC404 Control System</li>
+                    <li onclick="openPDF('EC405.pdf')">EC405 Analog Circuits</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('ex4')">ELECTRICAL AND ELECTRONICS ENGINEERING(EX) <span>&#9662;</span></button>
+                <ul class="subject-list" id="ex4-subjects">
+                    <li onclick="openPDF('BT401.pdf')">BT401 Mathematics-III</li>
+                    <li onclick="openPDF('EX402.pdf')">EX402 Electrical Machine-I</li>
+                    <li onclick="openPDF('EX403.pdf')">EX403 Digital Electronics Logic Design</li>
+                    <li onclick="openPDF('EX404.pdf')">EX404 Power System-I</li>
+                    <li onclick="openPDF('EX405.pdf')">EX405 Control System</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('ce4')">CIVIL ENGINEERING (CE) <span>&#9662;</span></button>
+                <ul class="subject-list" id="ce4-subjects">
+                    <li onclick="openPDF('ES401.pdf')">ES401 Energy & Environmental Engineering</li>
+                    <li onclick="openPDF('CE402.pdf')">CE402 Construction Technology</li>
+                    <li onclick="openPDF('CE403.pdf')">CE403 Structural Analysis-I</li>
+                    <li onclick="openPDF('CE404.pdf')">CE404 Transportation Engineering –I</li>
+                    <li onclick="openPDF('CE405.pdf')">CE405 Engineering Geology & Remote Sensing</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+                <button class="branch-button" onclick="toggleSubjects('me4')">MECHANICAL ENGINEERING (ME) <span>&#9662;</span></button>
+                <ul class="subject-list" id="me4-subjects">
+                    <li onclick="openPDF('ES401.pdf')">ES401 Energy & Environmental Engineering</li>
+                    <li onclick="openPDF('ME402.pdf')">ME402 Instrumentation & Control</li>
+                    <li onclick="openPDF('ME403.pdf')">ME403 Theory of Machines</li>
+                    <li onclick="openPDF('ME404.pdf')">ME404 Fluid Mechanics</li>
+                    <li onclick="openPDF('ME405.pdf')">ME405 Manufacturing Technology</li>
+                    <!-- Add more subjects as needed -->
+                </ul>
+              
+
+                <!-- Add more branches and their subjects as needed -->
+            </div>
+        </div>
+        </div>
+</body>
+</html>
