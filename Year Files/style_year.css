@@ -1,0 +1,195 @@
+/* Global Reset and No Overflow */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+  
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text Styles */
+.heading {
+    text-decoration: underline;
+    font-family: "Marcellus SC", serif;
+    font-style: normal;
+    font-size: xx-large;
+    color: white;
+}
+
+.semester-heading,
+.slogan {
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: beige;
+    margin-top: 20px;
+}
+
+.semester-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    justify-content: center;
+    gap: 20px; /* space between semesters */
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+/* Semester & Box Styling */
+.semester,
+.box {
+    flex: 1 1 300px;
+    max-width: 500px;
+    padding: 10px;
+    border: 2px double white;
+    border-radius: 10px;
+    background-color: #000;
+    text-align: center;
+}
+
+/* Branch Section */
+.branch-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branch-button {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Drop-down arrow inside button */
+.branch-button span {
+    font-size: medium;
+}
+
+.subject-list {
+    display: none;
+    width: 80%;
+    border: 3px solid white;
+    background-color: #81877ea9;
+    color: beige;
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+    text-align: left;
+}
+
+.subject-list li {
+    padding: 10px;
+    border-bottom: 2px solid white;
+    font-size: small;
+}
+
+.subject-list li:last-child {
+    border-bottom: none;
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #222;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .heading,
+    .semester-heading,
+    .slogan {
+        font-size: medium;
+    }
+
+    .branch-button,
+    .subject-list li {
+        font-size: small;
+    }
+
+    .box,
+    .semester {
+        width: 90%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-container button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading,
+    .semester-heading,
+    .slogan {
+        font-size: small;
+    }
+
+    .branch-button {
+        font-size: x-small;
+    }
+
+    .subject-list li {
+        font-size: x-small;
+    }
+
+    .button-container button {
+        font-size: 12px;
+    }
+}
