@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Tech Notes</title>
+    <link rel="shortcut icon" href="Stream Tech Notes.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div style="position: fixed; top: 0; width: 100%; z-index: 1000; background-color: black;">
+        <header id="index">
+            <div class="header-content">
+                <h1 class="heading" style="color: white; margin: 10px;">Stream Tech Notes</h1>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <nav class="navbar">
+        <div class="nav-links">
+        </div>
+    </nav>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#index">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#years">Years</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <section style="background-color: black;">
+        <div class="welcome-message">
+            <img src="/Images/book-image.jpg" alt="Books Photo" width="100%">
+            <div class="centered" style="color: rgb(226, 212, 212);">Welcome to <br/> BtechNotesHub and <br/> Stream Tech Notes </div>
+        </div>
+    </section>
+
+    <section style="background-color: black;" id="about">
+        <div class="about-heading">
+            <h1>About Us</h1>
+        </div>
+        <div class="about-content">
+            <img src="/Images/about_us.jpg" alt="About Us Image" width="100%">
+            <h3>ABOUT BTECHNOTESHUB AND STREAM TECH NOTES</h3>
+            <h4 style="font-size: x-large; font-family: serif; color: beige;">Empowering Students</h4>
+            <p class="about-text" style="font-size: large; font-family: 'Times New Roman', Times, serif; color: beige;">At BtechNotesHub and Stream Tech Notes, we believe in empowering students by providing them with free and <br/> accessible educational resources. Our platform is designed to cater to the needs of students from all over the globe,<br/> offering a wide range of articles, notes, and resources for various subjects and streams. Whether you're studying <br/> engineering, computer science, or any other field, we've got you covered. Our goal is to make learning a seamless and <br/>enjoyable experience for everyone. Join us on this journey of knowledge and exploration.</p>
+        </div>
+    </section>
+
+    <section id="years" style="background-color: rgb(0, 0, 0); color: white; padding: 20px;">
+        <div class="center-box">
+            <h1 class="heading" style="margin-top:50px">Years</h1>
+            <br>
+            <div class="selection-box">
+                <h1 style="margin-top: 100px; text-decoration: none;" class="benefits-heading">Please select your year</h1>
+                <br>
+                <button class="year-button" onclick="window.location.href='Year Files/first_year.html'">First Year</button>
+                <button class="year-button" onclick="window.location.href='Year Files/second_year.html'">Second Year</button>
+                <button class="year-button" onclick="window.location.href='Year Files/third_year.html'">Third Year</button>
+                <button class="year-button" onclick="window.location.href='Year Files/fourth_year.html'">Fourth Year</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" style="background-color: black;">
+        <h2 class="heading">Benefits</h2>
+        <div class="benefit-section">
+            <div class="benefit-part">
+                <img class="benefit-image" src="/Images/our-benefits 1.jpg" alt="Comprehensive Collection Image">
+                <h3 class="benefits-heading">Comprehensive Collection</h3>
+                <p class="benefits-para">Access all your Btech study materials, including notes and syllabus in one place.</p>
+            </div>
+            <div class="benefit-part">
+                <img class="benefit-image" src="/Images/our-benefits 2.jpg" alt="Accessible Anywhere Image">
+                <h3 class="benefits-heading">Accessible Anywhere</h3>
+                <p class="benefits-para">Study from anywhere, anytime, with our online resources and study materials.</p>
+            </div>
+            <div class="benefit-part">
+                <img class="benefit-image" src="/Images/our-benefits 3.jpg" alt="Simplicity and Convenience Image">
+                <h3 class="benefits-heading">Simplicity and Convenience</h3>
+                <p class="benefits-para">Our focus is on providing essential study materials in an easy-to-use format, making your academic journey simpler and more convenient.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: black; color: white;">
+        <h2 class="heading">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-details-box box">
+                <div class="contact-details">
+                    <img src="Images/contact icon.png" alt="Logo" class="logo">
+                    <h1>Contact Details</h1>
+                    <br>
+                    <p><strong>Email : </strong> StreamTechnotes@gmail.com</p>
+                    <br>
+                    <p><strong>Address : </strong>Bhopal</p>
+                </div>
+            </div>
+            <div class="review-section-box box">
+                <div class="review-section">
+                    <h2>User Review</h2>
+                    <div class="user-input">
+                        <label for="user-email">Your Email:</label>
+                        <br>
+                        <input type="email" id="user-email" name="user-email">
+                    </div>
+                    <div class="user-input">
+                        <label for="user-suggestion">Your Suggestion:</label>
+                        <br>
+                        <textarea id="user-suggestion" name="user-suggestion" rows="4"></textarea>
+                    </div>
+                    <div class="user-input">
+                        <p><strong>Your Rating:</strong></p>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                        </div>
+                        <button type="button" onclick="submitReview()" class="submit-button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

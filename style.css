@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  header, section {
+    width: 100%;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(226, 212, 212);
+    padding: 10px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 8px 12px;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgb(214, 187, 187);
+    transition: 0.5s;
+  }
+  
+  section.full-width-section {
+    padding: 60px 20px;
+  }
+  
+  .welcome-message {
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(236, 201, 207);
+    font-size: 60px;
+    font-family: "Marcellus SC", serif;
+  }
+  
+  .about-heading,
+  .heading,
+  .benefits-heading {
+    text-decoration: underline;
+    font-family: "Marcellus SC", serif;
+  }
+  
+  .about-heading,
+  .heading {
+    font-size: xx-large;
+    color: beige;
+  }
+  
+  .benefits-heading {
+    font-family: "Merriweather", serif;
+    font-size: larger;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .about-content,
+  .benefits-para {
+    font-family: "Crimson Text", serif;
+    font-size: x-large;
+    color: bisque;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .selection-box {
+    background-image: url("https://media.istockphoto.com/id/170235234/photo/blank-blackboard-background-textured.webp?b=1&s=170667a&w=0&k=20&c=syowzApmheoe-tyynoBgarYTLESpl18eDELlJzF4csg=");
+    background-color: #b4b0b0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 4px solid whitesmoke;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+  
+  .year-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .year-button:hover {
+    background-color: #5c5959;
+  }
+  
+  .benefit-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 20px;
+  }
+  
+  .benefit-part {
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .benefit-image {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .contact-details-box,
+  .review-section-box {
+    flex: 1 1 45%;
+    padding: 20px;
+  }
+  
+  .review-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    font-size: 30px;
+  }
+  
+  .star-rating input[type="radio"] {
+    display: none;
+  }
+  
+  .star-rating label {
+    cursor: pointer;
+    color: #ddd;
+  }
+  
+  .star-rating input[type="radio"]:checked ~ label,
+  .star-rating input[type="radio"]:checked ~ label ~ input[type="radio"] + label {
+    color: #ffdd00;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 8px 16px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submit-button:hover {
+    background-color: #c6b9b9;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 700px) {
+    .nav-links a {
+        font-size: medium;
+        padding: 5px 10px;
+    }
+  
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+  
+    .navbar{
+      top: 60px;
+    }
+  
+    .header-content h1 {
+        font-size: 1.2em;
+    }
+  
+    .centered {
+        font-size: 30px;
+    }
+  
+    .about-heading, .heading {
+        font-size: large;
+    }
+  
+    .about-content {
+        font-size: large;
+    }
+  
+    .benefits-para {
+        font-size: large;
+    }
+  }
+  
+  @media (max-width: 450px)
+  {
+    .centered{
+      font-size: 15px;
+    }
+  
+    .nav-links a {
+      font-size: x-small;
+      padding: 2px 7px;
+  }
+  
+  .nav-links {
+      gap: 5px;
+  }
+  
+  }
