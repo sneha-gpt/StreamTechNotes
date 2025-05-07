@@ -41,7 +41,8 @@ app.post("/submit-review", async (req, res) => {
              <p>Best regards,<br>Stream Tech Notes</p>`
     });
 
-    res.json({ message: "Review submitted successfully and thank-you email sent!" });
+    res.json({ message: "Review submitted successfully!!" });
+    
   } catch (error) {
     console.error("Error sending email:", error);
     res.status(500).json({ message: "Failed to send emails." });
