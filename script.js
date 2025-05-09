@@ -28,7 +28,7 @@ function submitReview() {
     return;
   }
 
-  fetch("http://localhost:3000/submit-review", {
+  fetch("http://localhost:10000/submit-review", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
