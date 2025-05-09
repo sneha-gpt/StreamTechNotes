@@ -8,6 +8,10 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.send("✅ Server is running. Use POST /submit-review to send feedback.");
+});
+
 app.post("/submit-review", async (req, res) => {
   const { email, suggestion, rating } = req.body;
 
