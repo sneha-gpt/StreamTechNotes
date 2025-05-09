@@ -8,8 +8,10 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
+const path = require("path");
+
 app.get("/", (req, res) => {
-  res.send("✅ Server is running. Use POST /submit-review to send feedback.");
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.post("/submit-review", async (req, res) => {
